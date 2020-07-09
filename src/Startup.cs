@@ -49,7 +49,7 @@ namespace SecurityHeadersTalk
                 
                 // context.Response.Headers.Add("content-security-policy", "script-src 'self'; style-src 'self'; img-src 'self' www.google.com; media-src 'none'");
                 
-                context.Response.Headers.Add("feature-policy", "geolocation 'none'");
+                // context.Response.Headers.Add("feature-policy", "geolocation 'none'");
 
                 await next();
             });
