@@ -46,13 +46,10 @@ namespace SecurityHeadersTalk
             app.Use(async (context, next) =>
             {
                 //context.Response.Headers.Add("x-frame-options", "DENY");
-
-                context.Response.Headers.Add("x-xss-protection", "0");
-                //context.Response.Headers.Add("x-xss-protection", "1;");
-                //context.Response.Headers.Add("x-xss-protection", "1; mode=block");
-
-                //context.Response.Headers.Add("content-security-policy", "script-src 'self' 'unsafe-inline'; style-src 'self'; img-src 'self' www.google.com; media-src 'none'");
-                //context.Response.Headers.Add("feature-policy", "geolocation 'none'");
+                
+                // context.Response.Headers.Add("content-security-policy", "script-src 'self'; style-src 'self'; img-src 'self' www.google.com; media-src 'none'");
+                
+                context.Response.Headers.Add("feature-policy", "geolocation 'none'");
 
                 await next();
             });
