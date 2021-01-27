@@ -1,4 +1,4 @@
-# Please visit https://github.com/scottsauber.com instead for code and slide related to my talks.
+# Please visit https://github.com/scottsauber/talks instead for code and slide related to my talks.
 
 # security-headers-talk
 
